@@ -11,7 +11,7 @@ layers:
   - U
   - Y
   - ''
-  - ''
+  - {t: default, h: sticky}
   - {t: A, h: LEFT META}
   - {t: R, h: ⎇}
   - {t: S, h: ⌃}
