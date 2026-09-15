@@ -11,18 +11,18 @@ layers:
   - U
   - Y
   - ''
-  - MACRO
-  - {t: A, h: ⌘}
+  - ''
+  - {t: A, h: LEFT META}
   - {t: R, h: ⎇}
-  - {t: S, h: ⇧}
-  - {t: T, h: ⌃}
+  - {t: S, h: ⌃}
+  - {t: T, h: LSHIFT}
   - G
   - M
-  - {t: N, h: ⇧}
+  - {t: N, h: RSHIFT}
   - {t: E, h: ⌃}
   - {t: I, h: ⎇}
-  - {t: O, h: ⌘}
-  - MACRO
+  - {t: O, h: RMETA}
+  - {t: utility, h: sticky}
   - ''
   - X
   - C
@@ -35,10 +35,10 @@ layers:
   - ''
   - {t: ↹, h: nav}
   - ⎵
-  - {t: ENTER, h: utility}
+  - {t: ENTER, h: sym}
   - ⌫
   - ⎵
-  - {t: sym, h: sticky}
+  - {t: num, h: sticky}
   nav:
   - {t: ▽, type: trans}
   - HOME
@@ -107,44 +107,44 @@ layers:
   - {t: ;, s: ':'}
   - <
   - '>'
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
+  - {t: ;, h: ;, s: ':'}
+  - {t: ':', h: ':'}
   - _
   - '*'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   num:
-  - '!'
-  - '?'
-  - '{'
-  - '}'
-  - +
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ^
   - KP 7
   - KP 8
   - KP 9
   - +
   - {t: ▽, type: trans}
-  - <
-  - '>'
-  - {t: (, h: ⇧}
-  - {t: ), h: ⌃}
-  - '-'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - _
   - KP 4
   - KP 5
   - KP 6
   - '-'
   - '='
-  - \
-  - {t: /, s: '?'}
-  - '['
-  - ']'
-  - '*'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - KP 0
   - KP 1
   - KP 2
@@ -155,15 +155,15 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   utility:
   - ☀↑
   - BT PRV
-  - PRINTSCREEN
+  - {t: ▽, type: trans}
   - 'VOL
 
     UP'
-  - {t: ▽, type: trans}
+  - PRINTSCREEN
   - F15
   - F7
   - F8
@@ -172,17 +172,17 @@ layers:
   - POWER
   - ☀↓
   - BT NXT
-  - PLAY
+  - {t: ▽, type: trans}
   - 'VOL
 
     DOWN'
-  - {t: ▽, type: trans}
+  - PLAY
   - F14
   - F4
   - F5
   - F6
   - F11
-  - {t: ▽, type: trans}
+  - {type: held}
   - SLEEP
   - BT CLR
   - {t: ▽, type: trans}
@@ -193,45 +193,6 @@ layers:
   - F2
   - F3
   - F12
-  - BT CLR
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  meh:
-  - Meh+Q
-  - Meh+W
-  - Meh+E
-  - Meh+R
-  - Meh+T
-  - Meh+Y
-  - Meh+U
-  - Meh+I
-  - Meh+O
-  - Meh+P
-  - {t: ▽, type: trans}
-  - Meh+A
-  - Meh+S
-  - Meh+D
-  - Meh+F
-  - Meh+G
-  - Meh+H
-  - Meh+J
-  - Meh+K
-  - Meh+L
-  - {t: Meh+;, s: 'Meh+:'}
-  - {t: ▽, type: trans}
-  - Meh+Z
-  - Meh+X
-  - Meh+C
-  - Meh+V
-  - Meh+B
-  - Meh+N
-  - Meh+M
-  - {t: 'Meh+,', s: Meh+<}
-  - {t: Meh+., s: Meh+>}
-  - Meh+/
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
