@@ -38,40 +38,40 @@ layers:
   - {t: ENTER, h: sym}
   - ⌫
   - ⎵
-  - {t: num, h: sticky}
+  - {t: nav, h: sticky}
   nav:
   - {t: ▽, type: trans}
   - HOME
   - ↑
   - END
   - PG UP
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ^
+  - KP 7
+  - KP 8
+  - KP 9
+  - +
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ←
   - ↓
   - →
   - PG DN
+  - _
+  - KP 4
+  - KP 5
+  - KP 6
+  - '-'
+  - '='
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - KP 0
+  - KP 1
+  - KP 2
+  - KP 3
+  - '*'
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -101,15 +101,15 @@ layers:
   - '}'
   - '-'
   - '='
-  - '@'
-  - '|'
-  - ':'
-  - {t: ;, s: ':'}
   - <
-  - '>'
-  - {t: ;, h: ;, s: ':'}
-  - {t: ':', h: ':'}
+  - '|'
+  - '~'
+  - {t: ;, s: ':'}
+  - '@'
   - _
+  - {t: ',', h: ;, s: <}
+  - {t: ., h: ':'}
+  - '>'
   - '*'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -134,7 +134,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - _
+  - {t: /, s: '?'}
   - KP 4
   - KP 5
   - KP 6
@@ -144,7 +144,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - KP NUMLOCK
   - KP 0
   - KP 1
   - KP 2
@@ -155,7 +155,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   utility:
   - ☀↑
   - BT PRV
@@ -187,7 +187,7 @@ layers:
   - BT CLR
   - {t: ▽, type: trans}
   - MUTE
-  - {t: ▽, type: trans}
+  - KP NUM
   - F13
   - F1
   - F2
@@ -200,27 +200,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [15, 16]
-  k: ⇪ WORD
-  l: [default]
 - p: [1, 0]
   k: ESC
   l: [default]
-- p: [9, 20]
-  k: 'VOL
-
-    UP'
-  l: [default]
-- p: [20, 31]
-  k: 'VOL
-
-    DOWN'
-  l: [default]
 - p: [4, 5]
   k: ⇪ LOCK
-  l: [default]
-- p: [9, 8]
-  k: ⌦
   l: [default]
 - p: [24, 25]
   k: _
@@ -228,13 +212,6 @@ combos:
 - p: [3, 2]
   k: '-'
   l: [default]
-- p: [2, 3, 1]
-  k: '---'
-  l: [default]
-- p: [4, 0, 5, 9]
-  k: F19
-  l: [default]
-  hidden: true
 - p: [6, 7]
   k: ''''
   l: [default]
@@ -256,35 +233,11 @@ combos:
 - p: [1, 2]
   k: ':'
   l: [default]
-- p: [32, 33, 34, 0]
-  k: F11
-  l: [default]
-  hidden: true
 - p: [32, 33, 34, 4]
   k: DEL
   l: [default]
   hidden: true
-- p: [32, 33, 34, 1]
-  k: F2
-  l: [default]
-  hidden: true
-- p: [32, 33, 34, 2]
-  k: F8
-  l: [default]
-  hidden: true
-- p: [32, 33, 34, 3]
-  k: F10
-  l: [default]
-  hidden: true
-- p: [32, 33, 34, 14]
-  k: ↑
-  l: [default]
-  hidden: true
-- p: [32, 33, 34, 13]
-  k: ↓
-  l: [default]
-  hidden: true
-- p: [32, 33, 34, 15]
-  k: ENTER
-  l: [default]
-  hidden: true
+- p: [12, 13, 14]
+  k: ⏎
+- p: [17, 18, 19]
+  k: ⏎
